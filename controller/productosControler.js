@@ -87,7 +87,7 @@ const buscarProductos=async(req, res)=>{
             const productoBuscado = await ProductosModel.findById(id)
             //hacemos un res del producto buscado para que nos lo muestre          
             res.status(200).send(productoBuscado)
-           
+           // en el postman -insomina debemos poner el id en la direccion para que nos lo busque
             
         } catch (error) {
             //hacemos un res por si no encuentra el producto por la ID
